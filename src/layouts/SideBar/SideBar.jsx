@@ -22,20 +22,17 @@ const SideBar = () => {
                 <a href="/dashboard">
                     <div className={currentLocation === "dashboard" ? "activeMenu" : "inactiveMenu"}>Dashboard</div>
                 </a>
-                <a href="/master-supplier">
-                    <div className={currentLocation === "master-supplier" ? "activeMenu" : "inactiveMenu"}>Master Supplier</div>
+                <a href="/master-sales">
+                    <div className={currentLocation === "master-sales" ? "activeMenu" : "inactiveMenu"}>Master Sales</div>
                 </a>
-                <a href="/master-po">
-                    <div className={currentLocation === "master-po" ? "activeMenu" : "inactiveMenu"}>Master PO</div>
+                <a href="/master-customer">
+                    <div className={currentLocation === "master-customer" ? "activeMenu" : "inactiveMenu"}>Master Customer</div>
                 </a>
-                <a href="/purchase-order">
-                    <div className={currentLocation === "purchase-order" ? "activeMenu" : "inactiveMenu"}>Purchase Order</div>
+                <a href="/sales-order">
+                    <div className={currentLocation === "sales-order" ? "activeMenu" : "inactiveMenu"}>Sales Order</div>
                 </a>
-                <a href="/master-ro">
-                    <div className={currentLocation === "master-ro" ? "activeMenu" : "inactiveMenu"}>Master RO</div>
-                </a>
-                <a href="/receiving-order">
-                    <div className={currentLocation === "receiving-order" ? "activeMenu" : "inactiveMenu"}>Receiving Order</div>
+                <a href="/master-so">
+                    <div className={currentLocation === "master-so" ? "activeMenu" : "inactiveMenu"}>Master SO</div>
                 </a>
             </div>
             <div className='logoutContainer'>

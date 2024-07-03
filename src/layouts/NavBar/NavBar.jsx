@@ -20,7 +20,7 @@ const NavBar = () => {
                 </div>
             </div>
             
-            <Card className='menu'>Pengadaan</Card>
+            <Card className='menu'>Penjualan</Card>
         </div>
     )
 }

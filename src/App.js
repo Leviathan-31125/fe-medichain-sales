@@ -6,15 +6,12 @@ import {PrimeReactProvider} from 'primereact/api';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { PrivateRoute } from './helpers/RouteMiddleware';
 import Dashboard from './pages/Dashboard/Dashboard';
-import MasterSupplier from './pages/MasterSupplier/MasterSupplier';
-import MasterPurchaseOrder from './pages/PurchaseOrder/MasterPurchaseOrder';
-import CreatePurchaseOrder from './pages/PurchaseOrder/CreatePurchaseOrder';
-import DetailPurchaseOrder from './pages/PurchaseOrder/DetailPurchaseOrder';
-import AddStockPO from './pages/PurchaseOrder/AddStockPO';
-import MasterReceivingOrder from './pages/ReceivingOrder/MasterReceivingOrder';
-import DetailReceivingOrder from './pages/ReceivingOrder/DetailReceivingOrder';
-import CreateReceivingOrder from './pages/ReceivingOrder/CreateReceivingOrder';
-import AddStockRO from './pages/ReceivingOrder/AddStockRO';
+import MasterSales from './pages/MasterSales/MasterSales';
+import MasterCustomer from './pages/MasterCustomer/MasterCustomer';
+import MasterSalesOrder from './pages/SalesOrder/MasterSalesOrder';
+import DetailSalesOrder from './pages/SalesOrder/DetailSalesOrder';
+import CreateSalesOrder from './pages/SalesOrder/CreateSalesOrder';
+import AddStockSO from './pages/SalesOrder/AddStockSO';
 
 
 function App() {
@@ -31,74 +28,50 @@ function App() {
             }  
           />
           <Route
-            path='/master-supplier'
+            path='/master-sales'
             element={
               <PrivateRoute>
-                <MasterSupplier/>
+                <MasterSales/>
               </PrivateRoute>
             }  
           />
           <Route
-            path='/master-po'
+            path='/master-customer'
             element={
               <PrivateRoute>
-                <MasterPurchaseOrder/>
+                <MasterCustomer/>
               </PrivateRoute>
             }  
           />
           <Route
-            path='/master-po/detail'
+            path='/master-so'
             element={
               <PrivateRoute>
-                <DetailPurchaseOrder/>
+                <MasterSalesOrder/>
               </PrivateRoute>
             }  
           />
           <Route
-            path='/purchase-order'
+            path='/master-so/detail'
             element={
               <PrivateRoute>
-                <CreatePurchaseOrder/>
+                <DetailSalesOrder/>
               </PrivateRoute>
             }  
           />
           <Route
-            path='/purchase-order/create'
+            path='/sales-order'
             element={
               <PrivateRoute>
-                <AddStockPO/>
+                <CreateSalesOrder/>
               </PrivateRoute>
             }  
           />
           <Route
-            path='/master-ro'
+            path='/sales-order/create'
             element={
               <PrivateRoute>
-                <MasterReceivingOrder/>
-              </PrivateRoute>
-            }  
-          />
-          <Route
-            path='/master-ro/detail'
-            element={
-              <PrivateRoute>
-                <DetailReceivingOrder/>
-              </PrivateRoute>
-            }  
-          />
-          <Route
-            path='/receiving-order'
-            element={
-              <PrivateRoute>
-                <CreateReceivingOrder/>
-              </PrivateRoute>
-            }  
-          />
-          <Route
-            path='/receiving-order/create'
-            element={
-              <PrivateRoute>
-                <AddStockRO/>
+                <AddStockSO/>
               </PrivateRoute>
             }  
           />

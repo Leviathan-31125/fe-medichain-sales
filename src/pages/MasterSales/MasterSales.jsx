@@ -1,5 +1,5 @@
 import React from 'react'
-import { BASE_API_SALES, BASE_API_WAREOHUSE } from '../../helpers'
+import { BASE_API_SALES } from '../../helpers'
 import Loading from '../../components/Loading/Loading'
 import TableHeader from '../../components/TableHeader/TableHeader'
 import PageLayout from '../../layouts/PageLayout/PageLayout'
@@ -17,7 +17,6 @@ import { Dialog } from 'primereact/dialog'
 import { Dropdown } from 'primereact/dropdown'
 import { InputTextarea } from 'primereact/inputtextarea'
 import { Card } from 'primereact/card'
-import { Image } from 'primereact/image'
 import { Tag } from 'primereact/tag'
 
 const MasterSales = () => {

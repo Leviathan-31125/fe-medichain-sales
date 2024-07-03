@@ -1,12 +1,12 @@
 import React from 'react'
 import PageLayout from '../../layouts/PageLayout/PageLayout'
 
-const Dashboard = () => {
+const MasterPurchaseOrder = () => {
   return (
     <PageLayout>
-      <h3>Welcome to Procurement App</h3>
+      
     </PageLayout>
   )
 }
 
-export default Dashboard
+export default MasterPurchaseOrder

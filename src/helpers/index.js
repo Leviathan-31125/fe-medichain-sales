@@ -2,7 +2,8 @@ import { Tag } from "primereact/tag";
 
 export const SERVICE_KEY = "acadMny2RG4NLl3bBWeHaHHTAjfur20y";
 export const BASE_API_WAREHOUSE = "http://34.171.218.254/api";
-export const BASE_API_SALES = "http://127.0.0.1:8004/api";
+// export const BASE_API_SALES = "http://127.0.0.1:8004/api";
+export const BASE_API_SALES = "http://34.136.157.34/api"
 
 export const checkAuth = () => {
     const isLogin = localStorage.getItem('accessToken');

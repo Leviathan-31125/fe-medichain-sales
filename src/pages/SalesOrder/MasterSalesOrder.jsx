@@ -130,7 +130,7 @@ const MasterSalesOrder = () => {
       <Loading visibility={loading}/>
       <ErrorDialog visibility={errorAttribut.visibility} errorMessage={errorAttribut.errorMessage} headerTitle={errorAttribut.headerTitle} setAttribute={setErrorAttribut}/>
       
-      <Card title="Daftar Customer">
+      <Card title="Daftar SO">
         <Tabs defaultActiveKey={0} className={styles.myTabs}>
           <Tab eventKey={0} title="Daftar Sales Order">
             <DataTable value={listMasterSO} tablestyle={{minwidth:'70rem'}} paginator rows={5}

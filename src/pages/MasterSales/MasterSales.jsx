@@ -1,7 +1,7 @@
 import React from 'react'
 import { BASE_API_SALES } from '../../helpers'
 import Loading from '../../components/Loading/Loading'
-import TableHeader from '../../components/TableHeader/TableHeader'
+import TableHeader from '../../components/TableHeader/TableHeaderButton'
 import PageLayout from '../../layouts/PageLayout/PageLayout'
 import ErrorDialog from '../../components/Dialog/ErrorDialog'
 import ConfirmDialog from '../../components/Dialog/ConfirmDialog'
